@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header nav {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    background: #050A4F;
+    padding: 20px 0;
+    border-radius: 3px;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+header nav div a {
+    margin: 0 5%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+header nav div a:hover {
+    color: rgb(114, 114, 114);
+}
+
+header nav h1 {
+    margin-left: 1%;
+    position: absolute;
+    color: white;
+}
+
+
+header #menu {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+header #menu #imgs img {
+    height: 400px;
+    animation-name: imgCar;
+    animation-duration: 2s;
+}
+
+header #info {
+    margin-top: 6%;
+    max-width: 500px;
+    font-weight: 600;
+    height: 200px;
+    
+}
+
+header section div{
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section div h1{
+    font-size: 60px;
+    font-family: monospace;
+    border-right: 4px  solid;
+    width: 8ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: writing 2s steps(10), blinking 0.5s;
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+
+main {
+    margin-top: 0%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+
+main section #classico{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;    
+
+}
+
+main section #classico #info{
+    max-width: 500px;
+    animation-name: inforClassicR;
+    animation-duration: 3s;
+}
+
+main section #classico #info h1{
+    animation-name: inforClassicR;
+    animation-duration: 3s;
+}
+
+main section #classico #info p{
+    margin-top: 1%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+    animation-name: inforClassicP;
+    animation-duration: 3s;
+}
+
+main #classico #imgs img {
+    height: 400px;
+    animation-name: imgCarR;
+    animation-duration: 2s;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------*/
+
+main section #inteligente {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 0%;
+}
+
+main section #inteligente #info{
+    max-width: 500px;
+    animation-name: inforClassicR;
+    animation-duration: 3s;
+}
+
+
+main section #inteligente #info h1{
+    animation-name: inforClassicR;
+    animation-duration: 3s;
+}
+
+main section #inteligente #info p{
+    margin-top: 1%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+    animation-name: inforClassicP;
+    animation-duration: 3s;
+}
+
+
+main #inteligente #imgs img {
+    height: 300px;
+    animation-name: imgCarL;
+    animation-duration: 2s;
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+
+
+main section #esportivo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 0%;   
+}
+
+main section #esportivo #info{
+    max-width: 500px;
+    animation-name: inforClassicL;
+    animation-duration: 3s;
+}
+
+main section #esportivo #info h1{
+    animation-name: inforClassicL;
+    animation-duration: 3s;
+}
+
+main section #esportivo #info p{
+    margin-top: 1%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 20px;
+    animation-name: inforClassicP;
+    animation-duration: 3s;
+}
+
+main #esportivo #imgs img {
+    height: 400px;
+    animation-name: imgCarL;
+    animation-duration: 2s;
+}
+
+/* --------------------------------------------------footer-------------------------------------------------------*/
+
+footer div{
+    background: #050A4F;
+    color: aliceblue;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+}
+
+footer div p{
+    font-size: 15px;
+} 
+
+
+/* --------------------------------------------------animation-------------------------------------------------------*/
+
+
+
+
+
+
+
+@keyframes imgCarR {
+    from {
+        opacity: 0.3;  
+        transform: translate(-50px,0px);   
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes imgCarL {
+    from {
+        opacity: 0.3;  
+        transform: translate(50px,0px);   
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes inforClassicR {
+    from {
+        opacity: 0.3;  
+        transform: translate(-50px,0px);   
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes inforClassicL {
+    from {
+        opacity: 0.3;  
+        transform: translate(50px,0px);   
+    }
+
+    to {
+        opacity: 1.0;
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes writing{
+    from {
+          width: 0;
+    }
+
+}
