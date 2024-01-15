@@ -129,7 +129,7 @@ main section #inteligente {
     display: flex;
     align-items: center;
     justify-content: center;    
-    margin-top: 0%;
+    margin-top: 6%;
 }
 
 main section #inteligente #info{
@@ -284,5 +284,47 @@ footer div p{
     from {
           width: 0;
     }
+
+}
+
+
+@media (max-width: 700px){
+    
+    body{
+        width: 110vw;
+        margin: 0;
+    }
+
+    header nav div a {
+        margin-top: 6%;
+    }
+    
+    header nav h1{
+        position: relative;
+    }
+
+    header nav, div {    
+        flex-direction: column;
+    }
+    main section #classico{
+        flex-direction: column-reverse;
+    }
+    main #classico #imgs img {
+        height: 300px;
+    }
+    main section #inteligente {
+        flex-direction: column-reverse;
+    }
+    main #inteligente #imgs img {
+        height: 220px;
+    }
+    main section #esportivo {
+        flex-direction: column-reverse;
+    }
+    main #esportivo #imgs img {
+        height: 280px;
+    }
+
+   
 
 }
